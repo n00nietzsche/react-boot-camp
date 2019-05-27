@@ -49,12 +49,28 @@
   - CRA 앱을 eject 하면 가능
   - 최신 디펜던시 업데이트 등을 자신이 수동으로 해주어야 함
 
-
 ## React의 특성: 통신 구조, 랜더링, 라이프 사이클
+- Props (단방향 데이터 바인딩)
+  - 불변 객체여야 함 (주소 값이 바뀌면 렌더링이 다시 일어남)
+- State (컴포넌트의 로컬 상태)
+  - setState 메소드를 이용하여 상태를 변경 가능
+  - 불변성을 지켜줘야만 렌더링이 필요할 때만 이뤄짐
 
 ## 개발 스택 구성: JS or TS? Redux or MobX?
-
+- TS의 장점?
+  - 리팩토링이 굉장히 빠름
+  - 오타가 날 일이 없음
+- Redux, Mobx 어떤 것을 써도 무방
+  - Redux 미들웨어의 선택... (https://github.com/GantMan/ReactStateMuseum)
+- CSS
+  - StyledComponent
+    - 가장 많이 사용
+  - Emotion
+    - StyledComponent의 상위호환
+  - JSS
+  
 ## 프로젝트 폴더 구성: Components or Molecules?
+
 
 ## React 브라우저 라우팅: react-router
 
