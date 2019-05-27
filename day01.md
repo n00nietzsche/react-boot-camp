@@ -84,5 +84,13 @@
 - js를 바꿔서 상태를 유지한 채로 개발할 수 있도록 해줌
 
 ## 검색 엔진을 위한 SSR (Server side rendering)
-
+- cra cra-universal을 이용하여 가능
+- next.js의 비동기함수인 getInitialProps을 이용하여 쉽게 가능
+  - 페이지에서만 동작, getInitialProps에 다 넣어줘야해서 코드가 많아질 수 있음
+  
 ## 배포하기: S3 or Github or ECS or Lambda
+
+
+
+....
+https://gitcodeshare.com/
