@@ -15,9 +15,9 @@
   - 선언적, 직관적, 높은 생산성
   - 찬반이 굉장히 나뉘었음
   - MVC 모델을 만들기 위함
-  
-## 라이벌
-- Vue.js
+- 라이벌?
+  - Vue.js
+    - 중국에선 더 많이 씀
 
 ## 시작하기: CRA or Next or Self?
 - CRA
@@ -70,11 +70,18 @@
   - JSS
   
 ## 프로젝트 폴더 구성: Components or Molecules?
-
+- Components
+- Atomic Design
 
 ## React 브라우저 라우팅: react-router
-
+- History API를 조작, 눈에 보이는 URL만 변경됨
+- react-router-dom
+  - path name 에 따른 컴포넌트 렌더링
+- withrouter
+  - match, location, history 등의 오브젝트를 만들어 이용함
+  
 ## 높은 생산성을 위한 HMR: react-hot-loader
+- js를 바꿔서 상태를 유지한 채로 개발할 수 있도록 해줌
 
 ## 검색 엔진을 위한 SSR (Server side rendering)
 
