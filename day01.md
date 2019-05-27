@@ -89,6 +89,30 @@
   - 페이지에서만 동작, getInitialProps에 다 넣어줘야해서 코드가 많아질 수 있음
   
 ## 배포하기: S3 or Github or ECS or Lambda
+- S3
+  - 저렴
+  - SSR 불가
+- Github
+  - 글로벌 CDN으로 매우 빠름
+  - SSR 불가
+  - 정적 페이지에 어울림
+- Heroku
+  - Next.js 가능
+  - https://github.com/mars/heroku-nextjs
+- Zeit : Now
+  - SSR 가능
+  - 스케일업 쉬움
+- Lambda 
+  - Next.js 8 버전의 Serverless 모드를 사용
+  - https://github.com/danielcondemarin/serverless-nextjs-plugin
+- ECS
+  - Docker 기반으로 구성하여 ECS를 통해서 배포
+  - API Server와 React 환경을 분리할 수 있음
+  - 스케일업 쉬움, 무중단 배포 쉬움
+  - 설정하기가 쉽지는 않음 백엔드 개발자에게 부탁하자
+  - 쿠버네티스(kubernetes)에 비하면 훨씬 쉬움
+  - Docker 사전 지식 필요
+  - 프로덕션에서 최소한의 수준이라고 생각
 
 
 
