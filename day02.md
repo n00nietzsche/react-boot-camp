@@ -53,23 +53,76 @@
       - 다만 node-sass는 깔아줘야 한다...
     - 모든 css 확장자를 지원하는 것은 중요...
       - 여러 개발자와 협업하는 도중 그들의 스타일에 맞출 필요가 있기 때문....
-  
+
 # Ant Design 설치 및 환경 구성
+- Ant Design 세팅하기
+  - `"@types/styled-components": "^4.1.15",`
+  - type 스크립트를 이용하여 미리 정의된 데피니션 확인 가능 (자동완성 기능 업그레이드)
+  ```js
+  const CracoLessPlugin = require('craco-less');
 
+  module.exports = {
+    plugins: [
+      {
+        plugin: CracoLessPlugin,
+        options: {
+          lessLoaderOptions: {
+            javascriptEnabled: true
+          }
+        }
+      }
+    ]
+  };
+  ```
+- JoinForm 만들기...
+  - react의 form에는 뭔가 귀찮은 것이 있음
+    - 모든 form의 input들을 state화 시켜야 한다?
+    - 입력 사항이 굉장히 많은데 어떻게?
+    - ant design의 자동화를 이용하자
+      - 자동 state 바인딩을 이용하자
+  - TS에서 `<Prop>`처럼 제네릭 타입을 이용
+  - 에러 + 라이브코딩 안하시고 갑자기 넘어가셔서 무슨 내용인지 잘 못들음.. 혼자 antd form 공부하면 될 것 같음...
+- 마크다운 tsx 만들기
+  - 패키지를 고를 때, 디펜던시를 잘 봐야 함 ...
+  - 절차
+    1. markdown-to-jsx를 설치 후 MarkdownView.tsx 작성
+    ```js
+    import React from "react";
+    import Markdown from "markdown-to-jsx";
+    import mdContents from "./README.md";
+    interface IProps {}
 
+    class MarkdownView extends React.Component<IProps> {
+      render() {
+        return (
+          <div>
+            <Markdown>{mdContents}</Markdown>
+          </div>
+        );
+      }
+    }
 
-# 데모 프로젝트 만들기
+    export default MarkdownView;
+    ```
+    2. craco-raw-loader를 설치 
+    3. craco.config.js에서 craco-raw-loader를 import
+    4. 설정 `{ plugin: rawLoader, options: { test: /\.(md|txt)$/ } }`
+    5. 임포트하여 쓰면 됨
 
-
+- Destructuring 비구조화 할당, async/await
 
 # 스타일링 / 테마다루기
-
+- 기타 여러가지 Antd 컴포넌트들 사용법 배웠음
+- 내용이 방대해 적진 않음 
+- Antd 문서보며 혼자 공부할 수 있음... 
 
 
 # 효율적인 코드 작성 (구조분해할당, Async / Await, Type)
-
+- 각종 구조분해 할당을 이용하여 자바스크립트 코드 간결화 .... 이미 알던 내용
 
 
 # 드래그 & 리사이징 (Resizing, ellipsis, Drag & drop, Sub component auto resizing)
-
+- resizing 해보았음
+- throttle
+- debounce 는 알아봐야 함
 
