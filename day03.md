@@ -100,6 +100,13 @@
 - Hooks를 쓸 땐 shallow말고 mount를 사용하여야 한다. hooks의 기능이 제대로 작동하지 않음.
 
 # React-testing-library
+
+- 벨로퍼트님 의견에는 많이 좋다고 생각
+- Variant
+  - 앞 부분에 오는 것들을 선택
+- Queries
+  - 뒷 부분에 오는 것들을 선택
+
 # 리덕스 / 비동기작업의 테스트
 # 프로젝트에 CI/CD 도입하기
   
