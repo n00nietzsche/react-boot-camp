@@ -107,3 +107,6 @@ React Apollo로 GraphQL 적용하기
 
 # REST 마이그레이션, SSR
 
+
+- Apollo의 로컬스토어 기능이 API 상태를 관리하기 충분하여 Redux와 Mobx를 쓰지 않을정도로 괜찮은가?
+  - 타입 같은 경우 Apollo가 훌륭, 단, 트레이드오프가 있다.
