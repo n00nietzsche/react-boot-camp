@@ -93,6 +93,8 @@ React Apollo로 GraphQL 적용하기
     - 명령어 실행 결과로 타입이 전부 들어있는 파일을 획득 가능
 
 - 키워드만 알면 찾아볼 수 있는 것 
+  - subscription
+  - 스키마 링크 (REST API를 GraphQL서버 없이 마이그레이션이 가능하다.)
 
 # React Apollo로 데이터 바인딩
 
