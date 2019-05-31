@@ -72,5 +72,6 @@
       - useState와 가장 큰 차이는 바뀌어도 렌더링이 일어나지 않는다.
   - useEffect
     - 빈배열 1번만
-    - 렌더가 완료된 타이밍에 호출됨
+    - 렌더가 완료된 타이밍에 호출됨 (mount)
+    - unmount 시점에서 할 일은 return에 적으면 됨
 # Form Component + Formik
